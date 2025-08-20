@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honor Thy Elder - Color Palette Guide</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+            background: #f8f9fa;
+            color: #2c3e50;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #5d6d7e;
+            margin-bottom: 2rem;
+        }
+        
+        .color-section {
+            margin-bottom: 3rem;
+        }
+        
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .color-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border: 1px solid #e9ecef;
+        }
+        
+        .color-sample {
+            height: 100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        .color-info {
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .color-name {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+        
+        .color-hex {
+            font-family: monospace;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .color-use {
+            font-size: 0.85rem;
+            color: #7f8c8d;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+        
+        .primary-colors .color-sample:nth-child(1) { background: #8e44ad; }
+        .primary-colors .color-sample:nth-child(5) { background: #6c5ce7; }
+        .primary-colors .color-sample:nth-child(9) { background: #74b9ff; }
+        .primary-colors .color-sample:nth-child(13) { background: #a8b5d1; }
+        
+        .secondary-colors .color-sample:nth-child(1) { background: #58d68d; }
+        .secondary-colors .color-sample:nth-child(5) { background: #ffa726; }
+        .secondary-colors .color-sample:nth-child(9) { background: #ffd54f; }
+        .secondary-colors .color-sample:nth-child(13) { background: #ff7043; }
+        
+        .neutral-colors .color-sample:nth-child(1) { background: #5d6d7e; color: white; }
+        .neutral-colors .color-sample:nth-child(5) { background: #85929e; color: white; }
+        .neutral-colors .color-sample:nth-child(9) { background: #626567; color: white; }
+        .neutral-colors .color-sample:nth-child(13) { background: #4a5568; color: white; }
+        
+        .accessibility-info {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #8e44ad;
+            margin: 2rem 0;
+        }
+        
+        .contrast-example {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .contrast-card {
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .good-contrast {
+            background: #8e44ad;
+            color: white;
+        }
+        
+        .excellent-contrast {
+            background: #5d6d7e;
+            color: white;
+        }
+        
+        .usage-examples {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+        }
+        
+        .usage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .usage-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .elderly-friendly {
+            background: #e8f5e8;
+            border: 2px solid #58d68d;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .elderly-friendly h3 {
+            color: #27ae60;
+            margin-bottom: 1rem;
+        }
+        
+        .features-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .features-list li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .features-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Honor Thy Elder - Color Palette & Accessibility Guide</h1>
+        
+        <div class="color-section">
+            <h2>Primary Colors</h2>
+            <p>Warm, inviting colors that convey wisdom, trust, and comfort</p>
+            <div class="color-grid primary-colors">
+                <div class="color-card">
+                    <div class="color-sample">Primary Purple</div>
+                    <div class="color-info">
+                        <div class="color-name">Royal Purple</div>
+                        <div class="color-hex">#8e44ad</div>
+                        <div class="color-use">Buttons, highlights, accents</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample">Soft Purple</div>
+                    <div class="color-info">
+                        <div class="color-name">Gentle Lavender</div>
+                        <div class="color-hex">#6c5ce7</div>
+                        <div class="color-use">Secondary buttons, links</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample">Calm Blue</div>
+                    <div class="color-info">
+                        <div class="color-name">Trust Blue</div>
+                        <div class="color-hex">#74b9ff</div>
+                        <div class="color-use">Info sections, backgrounds</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample">Soft Gray-Blue</div>
+                    <div class="color-info">
+                        <div class="color-name">Wisdom Gray</div>
+                        <div class="color-hex">#a8b5d1</div>
+                        <div class="color-use">Subtle backgrounds</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="color-section">
+            <h2>Secondary Colors</h2>
+            <p>Supporting colors for variety and warmth</p>
+            <div class="color-grid secondary-colors">
+                <div class="color-card">
+                    <div class="color-sample">Fresh Green</div>
+                    <div class="color-info">
+                        <div class="color-name">Growth Green</div>
+                        <div class="color-hex">#58d68d</div>
+                        <div class="color-use">Success, volunteer section</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample">Warm Orange</div>
+                    <div class="color-info">
+                        <div class="color-name">Community Orange</div>
+                        <div class="color-hex">#ffa726</div>
+                        <div class="color-use">Sponsor section, warmth</div>
+                    </div>
+                
